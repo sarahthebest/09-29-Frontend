@@ -127,6 +127,7 @@ br {
   height: 4vh;
 }
 #submit:hover {
+  background-color: #4d6569;
 }
 #form {
   width: 80%;
@@ -293,7 +294,7 @@ br {
 
 
 * {
-  outline: 0px solid red;
+  outline: 1px solid red;
 }
 svg {
   width: 100%;
