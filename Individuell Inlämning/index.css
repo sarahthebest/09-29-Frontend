@@ -1,266 +1,334 @@
 /* desktop */
 @media only screen and (max-width: 1920px) {
   body {
-    background-color: rgb(46, 46, 46);
     margin: 0;
-  }
-nav {
-      width: 50%;
-      height: auto;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 20px;
-      top: 20px;
-      border-radius: 20px;
-      backdrop-filter: blur(20px);
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      z-index: 100;
-    }
-    nav a{
-      font-family: "Archivo", sans-serif;
-      color: black;
-      font-size: 3vh;
-      font-weight:bold;
-      text-decoration: none;
-      padding: 10px;
-    }
-  }
-  #header {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 1vh;
-  }
-  .content {
-    background-color: rgb(70, 83, 33);
-    width: 80%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-  }
-  .info {
-    background-color: whitesmoke;
     width: 100%;
     height: fit-content;
-    display: grid;
-    grid-template-rows: 70% 1fr;
-    grid-template-columns: 50% 1fr;
-    gap: 0;
   }
-  .list {
-    width: 80%;
-    background-color: whitesmoke;
+  nav {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #e4e4e493;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 100;
+  }
+  nav a {
     font-family: "Archivo", sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: inside;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 3vh
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1vh;
   }
-  #selfie {
-    width: 70%;
-    height: 100%;
-    border-radius: 15%;
-    margin-left: 1vh;
+  nav a:hover {
+    color: rgb(0, 6, 83);
   }
-  #footer {
-    background-color: rgb(251, 255, 0);
-    width: 80%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
+}
+#header {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #4d6569;
+}
+.content {
+  width: 80%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.info {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 70% 1fr;
+  grid-template-columns: 50% 1fr;
+  gap: 0;
+}
+.list {
+  width: 80%;
+  font-family: "Archivo", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: inside;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 3vh;
+}
+#selfie {
+  width: 70%;
+  height: 100%;
+  margin-left: 1vh;
+  border: 3px rgb(23, 32, 83) dotted;
+}
+#footer {
+  height: fit-content;
+  background-color: #9cbb96;
+}
 
 #h4 {
-  font-family: "Freckle Face", cursive;
-  font-size: 5vh;
-  color: rgb(255, 74, 129);
-  text-shadow: 5px 5px 0px rgb(87, 231, 111);
+  font-family: "Archivo", sans-serif;
+  font-size: 4vh;
+  font-weight: 500;
+  color: #000000;
   text-align: center;
+  padding-top: 1vh;
 }
 #h3 {
   font-family: "Archivo", sans-serif;
   font-size: 3vh;
   color: rgb(29, 29, 29);
-  padding:1vh;
 }
+.h2,
 #h2 {
   font-family: "Archivo", sans-serif;
   font-size: 3vh;
   color: rgb(29, 29, 29);
-  padding:1vh;
 }
 #h1 {
-  font-family: "Freckle Face", cursive;
+  font-family: "Archivo", italic;
+  font-weight: 700;
   font-size: 8vh;
-  color: rgb(255, 74, 129);
-  text-shadow: 5px 5px 0px rgb(87, 231, 111);
-  padding:1vh;
+  color: #161616;
+  text-decoration: underline 2px;
 }
 #p {
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
   padding: 1vh;
+  background-color: rgba(255, 255, 255, 0.322);
+  border: 1px solid rgba(97, 97, 97, 0.425);
+  z-index: 0;
+}
+#desc {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+
 }
 br {
   display: block;
 }
 #submit {
-  background-color: rgb(255, 255, 255);
-  padding: 1vh;
-  border-radius: 10%;
-  border-style: none;
-  transition-property: ease-in;
-  transition: 1s;
+  background-color: #ffffff;
+  font-weight: 400;
+  width: 22vw;
+  height: 4vh;
 }
 #submit:hover {
-  background-color: rgb(187, 255, 0);
-  box-shadow: 2px 2px 0px rgb(255, 0, 179);
 }
 #form {
-  width: 100%; height: 35vh;
-  background-color: rgb(19, 255, 145);
-  margin: 0 auto;
-  font-family: "Archivo", sans-serif;
-  font-size: 1rem;
+  width: 80%;
+  background-color: #ffffff88;
+  padding: 1vh;
 }
-.form-group{
-  width: 50vh !important;
-  padding:1vh;
+.form-group {
+  padding: 1vh;
+  margin: auto;
 }
-#subject{
- width: 50vh !important;
- border: none;
+
+.bi {
+  color: #204C55;
+  margin: 0;
 }
-.bi{
-color: rgb(20, 128, 61);
-margin: 0;
+.gallery {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
+#bild{
+  height: 35vh;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  }
+  .row-cols-2{
+    margin-bottom: 1vh;
+    box-shadow: 1px 1px 3px rgba(117, 117, 117, 0.37);
+  }
 /* tablet */
 @media only screen and (max-width: 900px) {
-  body {
-    background-color: rgb(0, 255, 42);
-    margin: 0;
-    z-index: 0;
+  #nav {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    border-radius: 0;
   }
-    #header {
-      width: 100%; height: 40vh;
-      margin:auto;
-      background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding:1vh;
-      z-index: 1;
-    }
-    .noise{
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");      height: 50vh; width: 100%;
-      opacity: 50%;
-      width: 100%; height: 40vh;
-      position: absolute;
-      z-index: 2;
-    }
-    .title{
-      z-index: 3;
-      padding-bottom: 5vh;
-    }
-    #selfie{
-      border-radius: 100%;
-      width: 30vh;height: 30vh;
-    }
-    #footer{
-      width: 100%;
-      display: flex;
-      height: 45vh;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-    }
-    .content{
-      width: 100%;
-      height: fit-content;
-      margin: 0 auto;
-    }
-    .list{
-      width: 100%;
-      margin: 0;
-      padding:1vh;
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-    }
-    .title{
-      display: flex;
-      flex-direction: column;
-      z-index: 10;
-    }
-    .info{
-      width: 100%; height: fit-content;
-      display: flex;
-      flex-direction: column;
-      padding:1vh;
-    }
+  #header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    top: 5vh;
+  }
+  .title {
+    z-index: 3;
+    width: 100%;
+    height: 40vh;
+    display: inline-block;
+    top: 0;
+    box-sizing: border-box;
+  }
+  #selfie {
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+  }
+  .content {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5vh;
+  }
+  .list {
+    width: 100%;
+    margin: 0;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  #footer {
+    height: 40vh;
+    overflow: hidden;
+}
+  #submit {
+    border: 2px solid #ffbffa;
+    box-shadow: 0px 3px 0px rgb(38, 73, 50);
+  }
 }
 /* mobiler */
 @media only screen and (max-width: 600px) {
   body {
-    background-color: rgb(255, 0, 0);
     margin: 0;
   }
   nav {
-    width: 99%;
-    height: 8vh;
-    
-    top: 0;
-    border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
-  }
-  .content{
     width: 100%;
-    height:fit-content;
+    height: 8vh;
+    top: 0;
+    position: fixed;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    z-index: 20;
   }
-  .form-group{
+  .content {
+    width: 100%;
+    height: fit-content;
+  }
+  .form-group {
     width: 100% !important;
     margin-bottom: 1vh;
   }
-  #subject{
-   width: 100% !important;
+  .form{
+    height: 30vh;
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    z-index: 5;
+  }
   }
   #submit {
-    background-color: rgb(255, 255, 255);
-    padding: 1vh;
-    border-radius: 10%;
-    border-style: none;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #submit:hover {
     background-color: none;
-    box-shadow: none;
   }
-  #form{
+  #lotus {
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    margin-top: 2vh;
+    right: 50%;
+    opacity: 70%;
+  }
+  .gallery {
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
   }
-  .header{
-    top: 0;
-    margin-top: 0;
-  }
-  li{
-    margin: 1vh;
-    padding-bottom: 1vh;
-  }
-}
+  #bild{
+    height: 35vh;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    }
+    .row-cols-2{
+      border: 1px solid grey;
+      margin-bottom: 1vh;
+    }
 
+    .list-group{
+      display:inline-block;
+    width: 90%; 
+     }
+     
+
+
+
+* {
+  outline: 0px solid red;
+}
+svg {
+  width: 100%;
+  height: 40vh;
+  opacity: 0%;
+  z-index: 2;
+}
+.background {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  z-index: 1;
+  background-image: url(bilder/fish.png);
+  background-size: 100% 100%;
+}
+.main {
+  overflow: hidden;
+  overflow-x: hidden;
+}
+#cursive {
+  font-family: "Cedarville Cursive", cursive;
+  z-index: 5;
+}
+p {
+  font-family: "Archivo", sans-serif;
+  line-height: 4vh;
+  margin-top: 10vh;
+  color: #000000;
+}
+#footerBackground{
+  background-image: url(bilder/footerlotus.png);
+  background-size:cover;
+  background-position: bottom;
+  height: 100%;
+}
+#ikon{
+  width: 20vw; height: 10vh;
+}
