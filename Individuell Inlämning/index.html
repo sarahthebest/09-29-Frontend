@@ -26,7 +26,7 @@
 
     <main>
 
-  <header class="text-center" id="header">
+  <header class="text-center mx-auto" id="header">
       <nav id="nav">
     <a href="index.html" 
     style="font-weight: 400;"
@@ -42,7 +42,7 @@
     style="font-weight: 400;"
     >Linkedin</a>
   </nav>
-      <div class="title justify-content-center">
+      <div class="title justify-content-center flex-column">
     <h1 id="h1"> <em>Welcome</em> </h1>
     <img id="selfie" class="rounded-4" src="bilder/selfie1.jpg" />
 
@@ -50,8 +50,8 @@
       <div class="background"></div>
   </header>
 
-  <div class="content">
-    <section class="info d-flex flex-column mx-auto p-2">
+  <div class="content mx-auto">
+    <section class="info col-12 mx-auto mt-2 px-2">
       <h2>
       <span id="h2">Jag heter... </span>
       <span id="cursive">Sarah!</span>
@@ -66,15 +66,15 @@
 
       </div>
     </section>
-    <section class="list-group col-12 mx-auto " >
+    <section class="list-group col-12 mx-auto px-2 " >
       <h3 id="h3">Min Toolbox</h3>
       <li class="list-group-item rounded-top">Frontend <img id="ikon" src="Ikoner/frontend.png"> </li>
       <li class="list-group-item ">UX/UI <img id="ikon" src="Ikoner/ux.png"> </li>
       <li class="list-group-item" style="margin-bottom: 1vh;">Frogs <img id="ikon" src="Ikoner/frog.png"> </li>
     </section>
-    <section  class="gallery container-lg">
+    <section  class="gallery col-12 mx-auto px-2">
       <div class="row-cols-2 rounded-4">
-        <img class="col-sm-10 rounded-4" id="bild" src="bilder/blommor.jpg">
+        <img class="col-sm-11 rounded-4" id="bild" src="bilder/blommor.jpg">
         <p class="col-sm-2" id="desc">Blommor från Skansen. <span id="cursive">2023</span></p>
       </div>
       <div class="row-cols-2 rounded-4">
@@ -86,7 +86,7 @@
         <p class="col-sm-2" id="desc">Bild på krokodil. <span id="cursive">2023</span></p>
       </div>
     </section>
-  <footer class="rounded-top col-12 align-self-center mx-auto" id="footer">
+  <footer class="rounded-top col-12 align-self-center mx-auto pb-2" id="footer">
     <div id="footerBackground" >
     <h4 id="h4"> 
       <span id="cursive">Kontakta mig</span></h4>
@@ -100,7 +100,6 @@
         <input 
         type="email" 
         class="form-control " 
-        aria-describedby="emailHelpId"
         placeholder="abc@mail.com" />
       </div>
       <div class="form-group ">
@@ -110,13 +109,12 @@
         <textarea 
         id="subject" 
         name="subject"
-        type="message"
         class="form-control"
         >
         </textarea>
       </div>
       <input 
-      class="rounded-4"
+      class="rounded-4 align-self-center"
       id="submit" 
       type="submit" 
       value="Submit" />
